@@ -4,7 +4,7 @@ import argparse
 import numpy as np
 import scipy.misc
 from PIL import Image
-from util import segrun, fast_hist, get_scores
+from cyclegan.util import segrun, fast_hist, get_scores
 from cityscapes import cityscapes
 
 parser = argparse.ArgumentParser()

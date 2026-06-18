@@ -29,11 +29,11 @@ See frequently asked questions at: https://github.com/junyanz/pytorch-CycleGAN-a
 
 import os
 from pathlib import Path
-from options.test_options import TestOptions
-from data import create_dataset
-from models import create_model
-from util.visualizer import save_images
-from util import html
+from cyclegan.options.test_options import TestOptions
+from cyclegan.data import create_dataset
+from cyclegan.models import create_model
+from cyclegan.util.visualizer import save_images
+from cyclegan.util import html
 import torch
 
 try:
