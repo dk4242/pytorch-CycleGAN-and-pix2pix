@@ -68,6 +68,8 @@ class BaseOptions:
         if not self.initialized:  # check if it has been initialized
             parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
             parser = self.initialize(parser)
+        else:
+            parser = self.parser
 
         # get the basic options
         opt, _ = parser.parse_known_args()
